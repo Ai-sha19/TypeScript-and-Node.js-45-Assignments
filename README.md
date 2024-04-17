@@ -1,0 +1,1 @@
+This is my solution to the 45 Exercises with TypeScript and Node.js.
