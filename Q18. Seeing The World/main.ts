@@ -1,6 +1,8 @@
 // Assignment # 18. Seeing the World: Think of at least five places in the world you’d like to visit.
 // • Store the locations in a array. Make sure the array is not in alphabetical order.
 
+import { log } from "console";
+
 // • Print your array in its original order.
 
 // • Print your array in alphabetical order without modifying the actual list.
@@ -19,38 +21,30 @@
 
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
 
-// Store five places i'd like to visit in an array
-let placesToVisit: string[] = ["Makkah", " Madina ", " Dubai ", " Palestine ", " Kashmir "];
+// Making the array of place to visit and prints it's original order
+let placesToVisit: string[] = ['Dubai', 'Istanbol', 'Norway', 'China', 'Paris'];
+console.log('\nOriginal Order:' ,placesToVisit);
 
-// Print the array in its original order
-console.log(`\n Original Order: ${placesToVisit}`);
+// Print the array in Alphabetical Order without modifying the actual list.
+console.log("\nAlphabetical Order:", [...placesToVisit].sort());
 
-// Print the array in alphabetical order without modifying the actual list.
-console.log("\nAlphabetical Order:");
-console.log(placesToVisit.slice().sort());
-
-// Print the array to show it's still in its original order
-console.log(`\n Original order after sorting: ${placesToVisit}`);
+// Show that the array is still in it's original order
+console.log('\nOriginal Order after sorting:', placesToVisit);
 
 // Print the array in reverse alphabetical order without changing the original list
-console.log("\nReverse Alphabetical Order:");
-console.log(placesToVisit.slice().sort().reverse());
+console.log("\nReverse Alphabetical Order:", [...placesToVisit].sort().reverse());
 
-// Print the array again to show it's still in its original order
-console.log(`\n Original order after sorting: ${placesToVisit}`);
+// Show that the array is still in it's original order
+console.log('\nOriginal Order after sorting:', placesToVisit);
 
 // Reverse the order of the list and print the array to show that its order has changed.
-placesToVisit.reverse();
-console.log(`\n Reversed Order: ${placesToVisit}`);
+console.log('\nOriginal Array Reversed Order:', placesToVisit.reverse());
 
 // Reverse the order of the list again to bring it back to the original order
-placesToVisit.reverse();
-console.log(`\n Back to original order: ${placesToVisit}`);
+console.log('\nBack to Original Order:', placesToVisit.reverse());
 
-// Sort the array in alphabetical order and print the array to show that its order has been changed
-placesToVisit.sort();
-console.log(`\nSorted in Alphabetical Order: ${placesToVisit}`);
+// Print the array to show that it's order has been changed in Alphabetical Order now
+console.log('\nSorted in Alphabetical Order:', placesToVisit.sort());
 
-// Sort the array in reverse alphabetical order & print the list to show that its order has changed.
-placesToVisit.sort().reverse();
-console.log(`\nSorted in Reverse Alphabetical Order: ${placesToVisit}`);
+// Print the array again in reverse alphabetical order to show that its order has changed.
+console.log('\nOriginal Array Reverse Alphabetical Order:', placesToVisit.reverse());
