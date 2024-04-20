@@ -22,11 +22,8 @@ console.log("Good News! We have found a bigger table for dinner.\n");
 // Add one new guest to the beginning of the array
 guestList.unshift("Sir Zia Khan");
 
-// Making a variable for storing a middle index of the array
-let middleIndex: number = Math.floor(guestList.length / 2);
-
 // Add one new guest to the middle of the array
-guestList.splice(middleIndex, 0, 'Sir Ameen Alam ');
+guestList.splice(guestList.length / 2, 0, "Sir Ameen Alam");
 
 // Add one new guest at ending of the array
 guestList.push('Imran Riaz Khan');
