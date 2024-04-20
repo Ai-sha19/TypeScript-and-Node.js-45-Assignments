@@ -48,10 +48,12 @@ while (guestList.length > 2) {
 
 // Print invitations to the remaining two guests
 console.log(`\nInvitation to the last 2 Guests:`);
-guestList.forEach(lastTwo => console.log(`Luckily ${lastTwo}, you are still invited to dinner.`));
+guestList.forEach(lastTwo => {
+    console.log(`Luckily ${lastTwo}, you are still invited to dinner.`);
+});
 
 // Removing the last two guests from the list. 
-guestList.splice(0, 2);
+guestList.splice(0, guestList.length);
 
 // Print the empty list of array
 console.log('Empty List: ', guestList);
