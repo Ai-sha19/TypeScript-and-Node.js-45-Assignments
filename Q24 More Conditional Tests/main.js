@@ -5,7 +5,7 @@
 // • Tests using "and" and "or" operators
 // • Test whether an item is in a array
 // • Test whether an item is not in a array
-// Tests for equality and inequality with strings
+console.log("Tests for equality and inequality with strings:");
 let myName = "Aisha";
 // Equality
 console.log(myName == "Aisha"); //true 
@@ -13,10 +13,10 @@ console.log(myName === "aisha"); //false
 // Inequality
 console.log(myName !== "aisha"); //true
 console.log(myName !== "Aisha"); //false
-// Test using the lower case function
+console.log('Test using the lower case function:');
 console.log("CAR".toLowerCase() == "car"); //true
 console.log("CAR".toLowerCase() === "Car"); //false
-// Numerical tests
+console.log("Numerical tests:");
 let num1 = 10;
 let num2 = 15;
 console.log(num1 === num2); //false
@@ -25,17 +25,17 @@ console.log(num1 > num2); //false
 console.log(num1 < num2); //true
 console.log(num2 <= num2); //true
 console.log(num1 >= num2); //false
-// Test using "and" and "or" operators
+console.log("Test using 'and' and 'or' operators:");
 const number1 = 10;
 const number2 = 5;
 console.log(number1 > 9 && number2 < 5); //false
 console.log(number1 > 9 && number2 === 5); //true
 console.log(number1 > 9 || number2 < 5); //true
 console.log(number1 < 9 || number2 < 0); //false
-// Test whether an item is in an array
+console.log("Test whether an item is in an array:");
 let cities = ["karachi", "lahore", "islamabad", "multan"];
 console.log(cities.includes("karachi")); //true
-// Test whether an item is not in an array
+console.log("Test whether an item is not in an array:");
 let color = ["red", "blue", "green", "pink"];
 console.log(color.includes("Red")); //false
 export {};

@@ -13,7 +13,7 @@ import { log } from "console";
 
 // • Test whether an item is not in a array
 
-// Tests for equality and inequality with strings
+console.log("Tests for equality and inequality with strings:");
 let myName: string = "Aisha";
 
 // Equality
@@ -24,11 +24,11 @@ console.log(myName === "aisha");   //false
 console.log(myName !== "aisha");   //true
 console.log(myName !== "Aisha");   //false
 
-// Test using the lower case function
+console.log('Test using the lower case function:');
 console.log("CAR".toLowerCase() == "car");   //true
 console.log("CAR".toLowerCase() === "Car");   //false
 
-// Numerical tests
+console.log("Numerical tests:");
 let num1: number = 10;
 let num2: number = 15;
 
@@ -40,7 +40,7 @@ console.log(num2 <= num2);    //true
 console.log(num1 >= num2);    //false
 
 
-// Test using "and" and "or" operators
+console.log("Test using 'and' and 'or' operators:");
 const number1: number = 10;
 const number2: number = 5;
 
@@ -49,11 +49,10 @@ console.log(number1 > 9 && number2 === 5);   //true
 console.log(number1 > 9 || number2 < 5);   //true
 console.log(number1 < 9 || number2 < 0);   //false
  
-
-// Test whether an item is in an array
+console.log("Test whether an item is in an array:");
 let cities: string[] = ["karachi", "lahore", "islamabad", "multan"];
 console.log(cities.includes("karachi"));   //true
 
-// Test whether an item is not in an array
+console.log("Test whether an item is not in an array:");
 let color: string[] = ["red", "blue", "green", "pink"];
 console.log(color.includes("Red"));   //false
